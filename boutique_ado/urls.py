@@ -22,4 +22,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
-] + satic(settings.MEDIA_URL, document_roo=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_roo=settings.MEDIA_ROOT)
